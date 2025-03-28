@@ -20,7 +20,7 @@ Script your DNS update through API and automate them with Cron
 
 
     
-# Pre-reqs
+## Some pre-reqs
     I use Python to update the Domains and msmtp to send a quick simple email
     sudo yum install pip msmtp
     sudo pip install ovh
