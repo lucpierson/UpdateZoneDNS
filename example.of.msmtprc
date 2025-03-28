@@ -1,0 +1,11 @@
+account 
+host smtp.mail.ovh.net
+port 465
+auth on
+user contact@mydomain.com
+password @OVHmydomain.commypasswordandanythingyoulak2010
+tls on
+tls_starttls off
+tls_trust_file /etc/ssl/certs/ca-bundle.crt
+from contact@mydomain.com
+logfile        ~/msmtp.log
