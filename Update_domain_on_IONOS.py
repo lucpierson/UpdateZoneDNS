@@ -33,7 +33,7 @@ def log_message(message):
     mail_buffer.append(message)
 
 def get_dns_records():
-    """Récupère la liste complète des enregistrements DNS du domaine."""
+    """get the full list of DNS records of the domain."""
     url = "https://api.hosting.ionos.com/dns/v1/zones"
     response = requests.get(url, headers=HEADERS)
 
@@ -43,7 +43,7 @@ def get_dns_records():
         for zone in zones:
             if zone["name"] == DOMAIN:
                 zone_id = zone["id"]
-                log_message(f"✔ Zone DNS trouvée pour {DOMAIN} (ID: {zone_id})")
+                log_message(f"✔ Zone DNS found for {DOMAIN} (ID: {zone_id})")
 
                 records_url = f"https://api.hosting.ionos.com/dns/v1/zones/{zone_id}"
                 records_response = requests.get(records_url, headers=HEADERS)
@@ -96,7 +96,7 @@ def main():
     old_ip = get_old_ip()
 
     if not new_ip:
-        log_message("⚠ Impossible to read new  IP.")
+        log_message("⚠ Impossible to read new IP.")
         send_email()
         sys.exit(1)
 
