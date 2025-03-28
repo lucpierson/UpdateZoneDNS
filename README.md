@@ -1,4 +1,4 @@
-# Detect the public IP of the local internet provider changed
+# Detect the public IP V4 of the local internet provider changed
    Script /my/path/check_external_ip.sh
    Pre-req : none
 
