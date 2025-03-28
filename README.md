@@ -3,19 +3,22 @@
    Pre-req : none
 
 
+
 # UpdateZoneDNS
 Script your DNS update through API and automate them with Cron
 
-for OVH, you need to create API-Key 
+## for OVH, you need to create API-Key 
     https://www.ovh.com/auth/api/createToken
      in my case (Europe) https://eu.api.ovh.com/createToken/.
     the interface will provide : application_key ,  application_secret  , consumer_key
     depending OVH zone you are, you also need endpoint (in my case "ovh-eu")
 
-for WIX, you also need an API-Key,
+## for WIX, you also need an API-Key,
      https://manage.wix.com/account/api-keys
       you should see your ACCOUNT_ID
       Create an API Key, result is an AUTH_TOKEN
+
+
     
 # Pre-reqs
     I use Python to update the Domains and msmtp to send a quick simple email
@@ -27,4 +30,4 @@ for WIX, you also need an API-Key,
     My choice :  1 python script.py per domain to update
     All python scripts are called by the check_external_ip.sh script called by CRON every 30mn (*/30 * * * * /my/path/check_external_ip.sh)
 
-HOPE that helps
+# HOPE that helps
