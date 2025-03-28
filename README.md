@@ -1,4 +1,4 @@
-# Detect the public IP V4 of the local internet provider changed
+# Detect Change of the public IP V4 (internet provider) and update Domains DNS records
    Script /my/path/check_external_ip.sh
    Pre-req : none
 
