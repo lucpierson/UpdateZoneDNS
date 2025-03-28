@@ -7,18 +7,23 @@
 # UpdateZoneDNS
 Script your DNS update through API and automate them with Cron
 
-## for OVH, you need to create API-Key 
+## Create and Gather your API key informations
+
+### for OVH
     https://www.ovh.com/auth/api/createToken
      in my case (Europe) https://eu.api.ovh.com/createToken/.
-    the interface will provide : application_key ,  application_secret  , consumer_key
+    The successful creation will provide : application_key ,  application_secret  , consumer_key
     depending OVH zone you are, you also need endpoint (in my case "ovh-eu")
 
-## for WIX, you also need an API-Key,
+### for WIX
      https://manage.wix.com/account/api-keys
       you should see your ACCOUNT_ID
       Create an API Key, result is an AUTH_TOKEN
 
-
+### for IONOS
+      https://developer.hosting.ionos.fr/keys
+       Note that the option should be activated (free) 
+      The successful creation will provide : a "public prefix" and a private token
     
 ## Some pre-reqs
     I use Python to update the Domains and msmtp to send a quick simple email
