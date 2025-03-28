@@ -32,7 +32,7 @@ if [[ "$CURRENT_IP" != "$OLD_IP" ]]; then
     MAIL_CONTENT="New IP on Internet BOX: $CURRENT_IP"
 
 
-    echo -e "Subject: $DATE_TIME [Alert] Change IP on Internet Box : $CURRENT_IP \n\n $MAIL_CONTENT" | msmtp -t $EMAIL
+    echo -e "Subject: $DATE_TIME [Alert] Change IP on Internet Box : $CURRENT_IP \n\n $MAIL_CONTENT" | msmtp -a myEmailServer -t $EMAIL
     python /my/path/Update_domain_on_WIX.py
     python /my/path/Update_domain_on_OVH.py
 fi
