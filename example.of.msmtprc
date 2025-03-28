@@ -1,4 +1,4 @@
-account 
+account myEmailServer
 host smtp.mail.ovh.net
 port 465
 auth on
