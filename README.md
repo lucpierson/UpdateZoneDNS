@@ -14,6 +14,10 @@ Script your DNS update through API and automate them with Cron
      in my case (Europe) https://eu.api.ovh.com/createToken/.
     The successful creation will provide : application_key ,  application_secret  , consumer_key
     depending OVH zone you are, you also need endpoint (in my case "ovh-eu")
+      for the tocker creation, I  take 
+            unlimited 
+            get *  
+            put * 
 
 ### for WIX
      https://manage.wix.com/account/api-keys
